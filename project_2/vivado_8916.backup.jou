@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Fri Sep 09 15:39:31 2016
+# Process ID: 8916
+# Current directory: C:/Users/yu5866da-s/vivado/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6200 C:\Users\yu5866da-s\vivado\project_2\project_2.xpr
+# Log file: C:/Users/yu5866da-s/vivado/project_2/vivado.log
+# Journal file: C:/Users/yu5866da-s/vivado/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yu5866da-s/vivado/project_2/project_2.xpr
+add_files -norecurse {//tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/tb_pkg.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_ctrl.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_top.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/tb_keyboard.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/convert_scancode.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/sync_keyboard.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/edge_detector.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/binary_to_sg.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/convert_to_binary.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+remove_files {//tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/tb_keyboard.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_top.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/sync_keyboard.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/edge_detector.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/convert_scancode.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_ctrl.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/convert_to_binary.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/binary_to_sg.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+import_files -norecurse {//tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/tb_pkg.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_ctrl.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_top.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/tb_keyboard.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/convert_scancode.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/sync_keyboard.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/edge_detector.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/binary_to_sg.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/convert_to_binary.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+run all
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+run all
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+restart
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+restart
+close_sim
+launch_simulation
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim

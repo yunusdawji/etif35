@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Sep 07 12:58:01 2016
+# Process ID: 6980
+# Current directory: C:/Users/yu5866da-s/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6816 C:\Users\yu5866da-s\vivado\project_1\project_1.xpr
+# Log file: C:/Users/yu5866da-s/vivado/project_1/vivado.log
+# Journal file: C:/Users/yu5866da-s/vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yu5866da-s/vivado/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+current_design rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse {//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+import_files -force -norecurse //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd
+update_compile_order -fileset sources_1
+remove_files -fileset sim_1 C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+remove_files -fileset sim_1 C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/file_read.vhd
+import_files -force -norecurse {//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+remove_files C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd
+file delete -force C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd
+import_files -norecurse //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+remove_files C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/FSM_test.vhd
+file delete -force C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/FSM_test.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+import_files -norecurse //tiger.student.lth.se/yu5866da-s/Windows/Desktop/FSM_test.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+remove_files {C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Desktop/FSM_test.vhd C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/file_read.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+current_design synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+launch_simulation
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+set_property -name {xsim.simulate.runtime} -value {1000000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source test.tcl
+set_property -name {xsim.simulate.runtime} -value {1000000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+add_bp {C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd} 42
+remove_bps -file {C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd} -line 42
+add_bp {C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd} 48
+add_bp {C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd} 46
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+launch_simulation
+source test.tcl
+run all
+run 100 ms
+restart
+run 100 ms
+close [ open C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/moore.vhd w ]
+add_files C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/moore.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+run 100 ms
+run 100 ms
+restart
+run 100 ms
+close_sim
+launch_simulation
+launch_simulation
+source test.tcl
+restart
+run 100 ms
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mealy [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top moore [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+close_sim

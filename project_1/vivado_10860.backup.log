@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Sep 06 17:24:13 2016
+# Process ID: 10860
+# Current directory: C:/Users/yu5866da-s/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1132 C:\Users\yu5866da-s\vivado\project_1\project_1.xpr
+# Log file: C:/Users/yu5866da-s/vivado/project_1/vivado.log
+# Journal file: C:/Users/yu5866da-s/vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yu5866da-s/vivado/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd
+WARNING: [filemgmt 56-12] File '//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd' cannot be added to the project because it already exists in the project, skipping this file
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 06 17:58:11 2016...

@@ -1,0 +1,811 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Sep 06 18:11:23 2016
+# Process ID: 12440
+# Current directory: C:/Users/yu5866da-s/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10448 C:\Users\yu5866da-s\vivado\project_1\project_1.xpr
+# Log file: C:/Users/yu5866da-s/vivado/project_1/vivado.log
+# Journal file: C:/Users/yu5866da-s/vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yu5866da-s/vivado/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-1412] syntax error near port [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:76]
+ERROR: [VRFC 10-1412] syntax error near ; [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:80]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:1]
+[Tue Sep 06 18:13:46 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_1/project_1.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-1412] syntax error near port [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:76]
+ERROR: [VRFC 10-1412] syntax error near ; [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:80]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-91] sequence_decoder is not declared [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:76]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-91] sequence_decoder is not declared [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:76]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-91] sequence_decoder is not declared [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:76]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-91] sequence_decoder is not declared [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:76]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-91] sequence_decoder is not declared [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:76]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-719] formal port/generic <d_out> is not declared in <sequence_decoder> [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:77]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+remove_files -fileset sim_1 //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd
+remove_files -fileset sim_1 //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd
+remove_files -fileset sim_1 //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd
+update_compile_order -fileset sim_1
+add_files -norecurse {//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+CRITICAL WARNING: [Common 17-183] Failed to open handle xvhdl.log. Please check access permission of directory 'C:\Users\yu5866da-s\vivado\project_1\project_1.sim\sim_1\behav'. You should restart the application from a writable working directory.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-91] sequence_decoder is not declared [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:74]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+remove_files {//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd}
+remove_files -fileset sim_1 //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/FSM_test.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+import_files -norecurse {//tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/file_read.vhd //tiger.student.lth.se/yu5866da-s/Downloads/Lab_Files_2016/clockgenerator.vhd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd:1]
+[Tue Sep 06 18:33:59 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_1/project_1.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-91] sequence_decoder is not declared [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd:74]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 2baf0d00ae7c40449f257b23047cdc40 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_behav xil_defaultlib.test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling architecture behave of entity xil_defaultlib.FILE_READ [\FILE_READ(file_name="S:\\assign...]
+Compiling architecture behavioral of entity xil_defaultlib.CLOCKGENERATOR [\CLOCKGENERATOR(clkhalfperiod=25...]
+Compiling architecture behavioral of entity xil_defaultlib.test
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+ERROR: File S:\assignment_1\stimuli.txt could not be opened
+on HDL file C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd line 18
+ERROR: [Simtcl 6-50] Simulation engine failed to start: The Simulation shut down unexpectedly during initialization.
+Please see the Tcl Console or the Messages for details.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+ERROR: [VRFC 10-719] formal port/generic <d_out> is not declared in <sequence_decoder> [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd:79]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd:10]
+INFO: [VRFC 10-240] VHDL file C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 2baf0d00ae7c40449f257b23047cdc40 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_behav xil_defaultlib.test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling architecture behavioral of entity xil_defaultlib.sequence_decoder [sequence_decoder_default]
+Compiling architecture behave of entity xil_defaultlib.FILE_READ [\FILE_READ(file_name="S:\\assign...]
+Compiling architecture behavioral of entity xil_defaultlib.CLOCKGENERATOR [\CLOCKGENERATOR(clkhalfperiod=25...]
+Compiling architecture behavioral of entity xil_defaultlib.test
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+ERROR: File S:\assignment_1\stimuli.txt could not be opened
+on HDL file C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd line 18
+ERROR: [Simtcl 6-50] Simulation engine failed to start: The Simulation shut down unexpectedly during initialization.
+Please see the Tcl Console or the Messages for details.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 2baf0d00ae7c40449f257b23047cdc40 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_behav xil_defaultlib.test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling architecture behavioral of entity xil_defaultlib.sequence_decoder [sequence_decoder_default]
+Compiling architecture behave of entity xil_defaultlib.FILE_READ [\FILE_READ(file_name="C:\\Users\...]
+Compiling architecture behavioral of entity xil_defaultlib.CLOCKGENERATOR [\CLOCKGENERATOR(clkhalfperiod=25...]
+Compiling architecture behavioral of entity xil_defaultlib.test
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 2baf0d00ae7c40449f257b23047cdc40 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_behav xil_defaultlib.test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling architecture behavioral of entity xil_defaultlib.sequence_decoder [sequence_decoder_default]
+Compiling architecture behave of entity xil_defaultlib.FILE_READ [\FILE_READ(file_name="C:\\Users\...]
+Compiling architecture behavioral of entity xil_defaultlib.CLOCKGENERATOR [\CLOCKGENERATOR(clkhalfperiod=25...]
+Compiling architecture behavioral of entity xil_defaultlib.test
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FILE_READ
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLOCKGENERATOR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sequence_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 2baf0d00ae7c40449f257b23047cdc40 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_behav xil_defaultlib.test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling architecture behavioral of entity xil_defaultlib.sequence_decoder [sequence_decoder_default]
+Compiling architecture behave of entity xil_defaultlib.FILE_READ [\FILE_READ(file_name="C:\\Users\...]
+Compiling architecture behavioral of entity xil_defaultlib.CLOCKGENERATOR [\CLOCKGENERATOR(clkhalfperiod=50...]
+Compiling architecture behavioral of entity xil_defaultlib.test
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: sequence_decoder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:22 ; elapsed = 00:40:32 . Memory (MB): peak = 906.352 ; gain = 699.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sequence_decoder' [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sequence_decoder' (1#1) [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+WARNING: [Synth 8-3330] design sequence_decoder has an empty top module
+WARNING: [Synth 8-3917] design sequence_decoder has port d_out driven by constant 0
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port clk
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port rst
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port d_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:22 ; elapsed = 00:40:33 . Memory (MB): peak = 928.574 ; gain = 721.805
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:23 ; elapsed = 00:40:33 . Memory (MB): peak = 928.574 ; gain = 721.805
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:35 ; elapsed = 00:40:43 . Memory (MB): peak = 1276.699 ; gain = 1069.930
+7 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1276.699 ; gain = 370.348
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:1]
+[Tue Sep 06 18:53:24 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_1/project_1.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+remove_files C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/clockgenerator.vhd
+remove_files C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/imports/Lab_Files_2016/file_read.vhd
+reset_run synth_1
+launch_runs synth_1
+[Tue Sep 06 18:57:28 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_1/project_1.runs/synth_1/runme.log
+close_design
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:35 ; elapsed = 00:46:30 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sequence_decoder' [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sequence_decoder' (1#1) [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+WARNING: [Synth 8-3330] design sequence_decoder has an empty top module
+WARNING: [Synth 8-3917] design sequence_decoder has port d_out driven by constant 0
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port clk
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port rst
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port d_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:36 ; elapsed = 00:46:30 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:36 ; elapsed = 00:46:30 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.949 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:48 ; elapsed = 00:47:44 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sequence_decoder' [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sequence_decoder' (1#1) [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+WARNING: [Synth 8-3330] design sequence_decoder has an empty top module
+WARNING: [Synth 8-3917] design sequence_decoder has port d_out driven by constant 0
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port clk
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port rst
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port d_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:49 ; elapsed = 00:47:45 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:49 ; elapsed = 00:47:45 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.949 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:03 ; elapsed = 00:49:28 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sequence_decoder' [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sequence_decoder' (1#1) [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:13]
+WARNING: [Synth 8-3330] design sequence_decoder has an empty top module
+WARNING: [Synth 8-3917] design sequence_decoder has port d_out driven by constant 0
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port clk
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port rst
+WARNING: [Synth 8-3331] design sequence_decoder has unconnected port d_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:04 ; elapsed = 00:49:29 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:04 ; elapsed = 00:49:29 . Memory (MB): peak = 1726.949 ; gain = 1520.180
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.949 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:1]
+[Tue Sep 06 19:01:01 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+remove_files -fileset sim_1 C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_1/project_1.srcs/sources_1/new/lab1.vhd:1]
+[Tue Sep 06 19:01:46 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_1/project_1.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 06 19:03:17 2016...

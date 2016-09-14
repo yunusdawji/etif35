@@ -1,0 +1,1385 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Sep 13 15:19:17 2016
+# Process ID: 5312
+# Current directory: C:/Users/yu5866da-s/vivado/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8504 C:\Users\yu5866da-s\vivado\project_2\project_2.xpr
+# Log file: C:/Users/yu5866da-s/vivado/project_2/vivado.log
+# Journal file: C:/Users/yu5866da-s/vivado/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yu5866da-s/vivado/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 819.012 ; gain = 160.727
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 833.637 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: keyboard_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:01 ; elapsed = 00:05:33 . Memory (MB): peak = 873.434 ; gain = 667.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard_top' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:19' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:16' bound to instance 'edge_detector_inst' of component 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+WARNING: [Synth 8-614] signal 'last_state' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+WARNING: [Synth 8-3848] Net valid_scan_code in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:22]
+WARNING: [Synth 8-3848] Net scan_code_out in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (3#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (4#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst' of component 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (5#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'binary_to_sg' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:17' bound to instance 'binary_to_sg_inst' of component 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_sg' (6#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_top' (7#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port valid_scan_code
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[7]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[6]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[5]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[4]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[3]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[2]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[1]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[0]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port clk
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port rst
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port edge_found
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port serial_data
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:02 ; elapsed = 00:05:34 . Memory (MB): peak = 900.441 ; gain = 694.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:02 ; elapsed = 00:05:34 . Memory (MB): peak = 900.441 ; gain = 694.219
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:12 ; elapsed = 00:05:48 . Memory (MB): peak = 1184.285 ; gain = 978.063
+25 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1184.285 ; gain = 335.715
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:31 ; elapsed = 00:08:05 . Memory (MB): peak = 1196.914 ; gain = 990.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard_top' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:19' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:16' bound to instance 'edge_detector_inst' of component 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+WARNING: [Synth 8-614] signal 'last_state' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:56]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+WARNING: [Synth 8-3848] Net valid_scan_code in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:22]
+WARNING: [Synth 8-3848] Net scan_code_out in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (3#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (4#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst' of component 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (5#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'binary_to_sg' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:17' bound to instance 'binary_to_sg_inst' of component 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_sg' (6#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_top' (7#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port valid_scan_code
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[7]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[6]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[5]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[4]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[3]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[2]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[1]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[0]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port clk
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port rst
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port edge_found
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port serial_data
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:31 ; elapsed = 00:08:06 . Memory (MB): peak = 1218.250 ; gain = 1012.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:31 ; elapsed = 00:08:06 . Memory (MB): peak = 1218.250 ; gain = 1012.027
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1259.238 ; gain = 62.324
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:1]
+[Tue Sep 13 15:28:52 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_2/project_2.runs/synth_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:06 ; elapsed = 00:09:59 . Memory (MB): peak = 1259.238 ; gain = 1053.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard_top' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:19' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:16' bound to instance 'edge_detector_inst' of component 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+WARNING: [Synth 8-614] signal 'last_state' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+WARNING: [Synth 8-3848] Net valid_scan_code in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:22]
+WARNING: [Synth 8-3848] Net scan_code_out in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (3#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (4#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst' of component 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (5#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'binary_to_sg' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:17' bound to instance 'binary_to_sg_inst' of component 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_sg' (6#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_top' (7#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port valid_scan_code
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[7]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[6]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[5]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[4]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[3]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[2]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[1]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port scan_code_out[0]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port clk
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port rst
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port edge_found
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port serial_data
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:06 ; elapsed = 00:10:00 . Memory (MB): peak = 1259.238 ; gain = 1053.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:06 ; elapsed = 00:10:00 . Memory (MB): peak = 1259.238 ; gain = 1053.016
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.207 ; gain = 28.969
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+file mkdir C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new
+close [ open C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd w ]
+add_files C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:1]
+[Tue Sep 13 16:29:16 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_2/project_2.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:1]
+[Tue Sep 13 16:54:44 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_2/project_2.runs/synth_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:25 ; elapsed = 01:35:51 . Memory (MB): peak = 1298.074 ; gain = 1091.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard_top' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:19' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:16' bound to instance 'edge_detector_inst' of component 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+WARNING: [Synth 8-614] signal 'last_state' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:34' bound to instance 'counter_1_inst' of component 'counter' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:44]
+WARNING: [Synth 8-614] signal 'serial_data' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:64]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:64]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data_reg' and it is trimmed from '10' to '9' bits. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:59]
+WARNING: [Synth 8-3848] Net valid_scan_code in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:22]
+WARNING: [Synth 8-3848] Net data in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (4#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (5#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst' of component 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (6#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'binary_to_sg' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:17' bound to instance 'binary_to_sg_inst' of component 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_sg' (7#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_top' (8#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port valid_scan_code
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port serial_data
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:26 ; elapsed = 01:35:51 . Memory (MB): peak = 1298.074 ; gain = 1091.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:26 ; elapsed = 01:35:51 . Memory (MB): peak = 1298.074 ; gain = 1091.852
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1336.090 ; gain = 38.016
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:43 ; elapsed = 01:38:26 . Memory (MB): peak = 1336.090 ; gain = 1129.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard_top' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:19' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:16' bound to instance 'edge_detector_inst' of component 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+WARNING: [Synth 8-614] signal 'last_state' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:34' bound to instance 'counter_1_inst' of component 'counter' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:44]
+WARNING: [Synth 8-614] signal 'serial_data' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:64]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:64]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data_reg' and it is trimmed from '10' to '9' bits. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:59]
+WARNING: [Synth 8-3848] Net valid_scan_code in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:22]
+WARNING: [Synth 8-3848] Net data in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (4#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (5#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst' of component 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (6#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'binary_to_sg' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:17' bound to instance 'binary_to_sg_inst' of component 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_sg' (7#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_top' (8#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port valid_scan_code
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port serial_data
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:44 ; elapsed = 01:38:27 . Memory (MB): peak = 1336.090 ; gain = 1129.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:44 ; elapsed = 01:38:27 . Memory (MB): peak = 1336.090 ; gain = 1129.867
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1351.414 ; gain = 15.324
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:1]
+[Tue Sep 13 16:58:08 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_2/project_2.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:1]
+[Tue Sep 13 17:10:32 2016] Launched synth_1...
+Run output will be captured here: C:/Users/yu5866da-s/vivado/project_2/project_2.runs/synth_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:07:19 ; elapsed = 01:51:54 . Memory (MB): peak = 1351.414 ; gain = 1145.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard_top' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:19' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd:30]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:16' bound to instance 'edge_detector_inst' of component 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+WARNING: [Synth 8-614] signal 'last_state' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd:25]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:34' bound to instance 'counter_1_inst' of component 'counter' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd:44]
+WARNING: [Synth 8-614] signal 'serial_data' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:64]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:64]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data_reg' and it is trimmed from '10' to '9' bits. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:59]
+WARNING: [Synth 8-3848] Net valid_scan_code in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:22]
+WARNING: [Synth 8-3848] Net data in module/entity convert_scancode does not have driver. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (4#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (5#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst' of component 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (6#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'binary_to_sg' declared at 'C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:17' bound to instance 'binary_to_sg_inst' of component 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'binary_to_sg' [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_sg' (7#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_top' (8#1) [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd:34]
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port valid_scan_code
+WARNING: [Synth 8-3331] design convert_scancode has unconnected port serial_data
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:07:20 ; elapsed = 01:51:54 . Memory (MB): peak = 1351.414 ; gain = 1145.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:07:20 ; elapsed = 01:51:54 . Memory (MB): peak = 1351.414 ; gain = 1145.191
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1361.441 ; gain = 10.027
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+run 100 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_keyboard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_keyboard_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_scancode
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync_keyboard
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_to_sg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convert_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:46]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:42]
+WARNING: [VRFC 10-393] cannot access 'ramfile' from inside pure function 'getcodefromfile'. [C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd:51]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity keyboard_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_keyboard
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 74e0c934530645d0a007d5dbda16cc9e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_keyboard_behav xil_defaultlib.tb_keyboard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.tb_pkg
+Compiling architecture sync_keyboard_arch of entity xil_defaultlib.sync_keyboard [sync_keyboard_default]
+Compiling architecture edge_detector_arch of entity xil_defaultlib.edge_detector [edge_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture convert_scancode_arch of entity xil_defaultlib.convert_scancode [convert_scancode_default]
+Compiling architecture keyboard_ctrl_arch of entity xil_defaultlib.keyboard_ctrl [keyboard_ctrl_default]
+Compiling architecture convert_to_binary_arch of entity xil_defaultlib.convert_to_binary [convert_to_binary_default]
+Compiling architecture binary_to_sg_arch of entity xil_defaultlib.binary_to_sg [binary_to_sg_default]
+Compiling architecture keyboard_top_arch of entity xil_defaultlib.keyboard_top [keyboard_top_default]
+Compiling architecture tb_keyboard_arch of entity xil_defaultlib.tb_keyboard
+Built simulation snapshot tb_keyboard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yu5866da-s/vivado/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_keyboard_behav -key {Behavioral:sim_1:Functional:tb_keyboard} -tclbatch {tb_keyboard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source tb_keyboard.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_keyboard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+Note: ********Reset released, STARTING TESTBENCH ***********
+Time: 0 ps  Iteration: 0  Process: /tb_keyboard/line__169  File: C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 13 17:18:48 2016...

@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Sep 08 14:05:55 2016
+# Process ID: 4188
+# Current directory: C:/Users/yu5866da-s/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5372 C:\Users\yu5866da-s\vivado\project_1\project_1.xpr
+# Log file: C:/Users/yu5866da-s/vivado/project_1/vivado.log
+# Journal file: C:/Users/yu5866da-s/vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yu5866da-s/vivado/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source mealy.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source test.tcl
+restart
+run 100 ms
+run 100 ms
+run 100 ms
+restart
+run 100 ms
+close_sim
+launch_simulation
+source test.tcl
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+source test.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test.tcl
+restart
+run 100 ms
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+source test.tcl
+restart
+run 100 ms
+close_sim
+close_sim

@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Sep 12 15:23:58 2016
+# Process ID: 4256
+# Current directory: C:/Users/yu5866da-s/vivado/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7580 C:\Users\yu5866da-s\vivado\project_2\project_2.xpr
+# Log file: C:/Users/yu5866da-s/vivado/project_2/vivado.log
+# Journal file: C:/Users/yu5866da-s/vivado/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yu5866da-s/vivado/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 10 us
+restart
+run 10 us
+run 100 us
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+run 100 us
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 us
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 us
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 us
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+run all
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run all
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+run all
+restart
+run 100 us
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+restart
+run 100 ms
+restart
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+restart
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+restart
+run 100 ms
+run 100 ms
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+restart
+run 100 ms
+close_sim
+launch_simulation
+synth_design -rtl -name rtl_1
+show_objects -name last_state [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+launch_simulation
+refresh_design
+refresh_design
+launch_simulation
+launch_simulation
+source tb_keyboard.tcl
+close_sim
+launch_simulation
+source tb_keyboard.tcl
+run all
+restart
+run 100 ms
+close_sim
+launch_simulation
+launch_simulation
+source tb_keyboard.tcl
+restart
+run 100 ms
+close_sim

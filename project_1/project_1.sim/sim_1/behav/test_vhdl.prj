@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/lab1.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/moore.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sim_1/imports/Lab_Files_2016/file_read.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sim_1/imports/Lab_Files_2016/clockgenerator.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sim_1/imports/Lab_Files_2016/FSM_test.vhd"
+
+# Do not sort compile order
+nosort
