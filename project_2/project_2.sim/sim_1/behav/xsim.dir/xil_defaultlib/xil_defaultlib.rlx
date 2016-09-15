@@ -1,12 +1,12 @@
 0.2
 2016.1
-C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd,1442325200,vhdl,,,,,,,,,
-C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd,1473859125,vhdl,,,,,,,,,
+C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/binary_to_sg.vhd,1473945697,vhdl,,,,,,,,,
+C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_scancode.vhd,1473941914,vhdl,,,,,,,,,
 C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/convert_to_binary.vhd,1442325200,vhdl,,,,,,,,,
 C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/edge_detector.vhd,1473779312,vhdl,,,,,,,,,
-C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd,1442325200,vhdl,,,,,,,,,
+C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_ctrl.vhd,1473945674,vhdl,,,,,,,,,
 C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/keyboard_top.vhd,1473428665,vhdl,,,,,,,,,
 C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/sync_keyboard.vhd,1473428586,vhdl,,,,,,,,,
-C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd,1473432721,vhdl,C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd,,,,,,,,
+C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_keyboard.vhd,1473432721,vhdl,,,,,,,,,
 C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/imports/Lab2/tb_pkg.vhd,1442325212,vhdl,,,,,,,,,
 C:/Users/yu5866da-s/vivado/project_2/project_2.srcs/sources_1/new/counter.vhd,1473854161,vhdl,,,,,,,,,

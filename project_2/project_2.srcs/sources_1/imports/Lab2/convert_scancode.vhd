@@ -26,10 +26,13 @@ end convert_scancode;
 
 architecture convert_scancode_arch of convert_scancode is
     signal count: std_logic_vector(3 downto 0);
-    signal data: std_logic_vector(7 downto 0);
     signal data_reg: std_logic_vector(9 downto 0);
     signal data_next: std_logic_vector(9 downto 0);
+    signal data_reg1: std_logic_vector(9 downto 0);
+    signal data_next1: std_logic_vector(9 downto 0);
     signal shift_count_up : std_logic;
+    signal valid_code_reg : std_logic;
+    signal valid_code_next : std_logic;
     component counter is
       port ( 
         clk : in std_logic;
@@ -50,38 +53,37 @@ begin
             count => count
 	     );
 
+    -- sequential block
     process(clk, rst)
     begin
         if(rst = '1') then
-         --   counter <= "0000";
-         --   scan_code_out <= "00000000";
             data_reg <= "0000000000";
         elsif (clk'event and clk = '1') then
+            
+            data_reg1 <= data_next1;
+            valid_code_reg <= valid_code_next;
+            
+            -- when count is up, move the data out to reg
             if(shift_count_up = '1') then
                 data_reg <= data_next;
-            else
-                data_reg <= data_next;
             end if;
-            
-            --data_reg <= serial_data & data_reg(data_reg'left - 1 downto 0);
+           
         end if;
     end process;
 
+    -- process for shifting reg
     process(count)
     begin
-       --if(shift_count_up = '1') then
-            -- do shift once more because we only count till 10
-            data_next <= serial_data & data_reg(9 downto 1);
-       --else
-       --     data_reg <= serial_data & data_reg(data_reg'left - 1 downto 0);
-       --end if;
+        data_next1 <= serial_data & data_reg1(9 downto 1);
     end process;
     
-    --shift_count_up <= count
-    
+    -- data reg for serial to parallel
+    data_next <= data_next1;
     scan_code_out <= unsigned(data_reg(7 downto 0));
-    --data <= data_reg(7 downto 0);
     
-
-
+    -- reg for setting valid code next
+    valid_code_next <= '1' when (shift_count_up='1' and edge_found='1') else '0';
+    valid_scan_code <= valid_code_reg;
+    
+    
 end convert_scancode_arch;

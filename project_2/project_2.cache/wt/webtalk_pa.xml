@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Sep 14 13:28:01 2016">
+<application name="pa" timeStamp="Thu Sep 15 16:04:40 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="738362f2f634430ca93048783d748664" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -19,15 +19,16 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Java Command Handlers">
 <property name="AddSources" value="3" type="JavaHandler"/>
 <property name="EditDelete" value="1" type="JavaHandler"/>
-<property name="EditUndo" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="4" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
 <property name="RunSchematic" value="4" type="JavaHandler"/>
 <property name="RunSynthesis" value="10" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
 <property name="SetTopNode" value="1" type="JavaHandler"/>
 <property name="ShowView" value="1" type="JavaHandler"/>
 <property name="SimulationClose" value="49" type="JavaHandler"/>
 <property name="SimulationRestart" value="65" type="JavaHandler"/>
-<property name="SimulationRun" value="64" type="JavaHandler"/>
+<property name="SimulationRun" value="70" type="JavaHandler"/>
 <property name="SimulationRunAll" value="7" type="JavaHandler"/>
 <property name="SimulationRunForTime" value="64" type="JavaHandler"/>
 <property name="TclFind" value="1" type="JavaHandler"/>
@@ -38,13 +39,485 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ZoomOut" value="5" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ; 0 ; 8 ; 0 ; 0 ; 0 ; Tue Sep 13 17:10:38 CEST 2016 ; 00:00:09 ; Vivado Synthesis Defaults (Vivado Synthesis 2016" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Run Synthesis], 17, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="6" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, Status, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, tb_keyboard - tb_keyboard_arch (tb_keyboard.vhd" value="29" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false, false, false, false, false, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, launch_simulation. , [USF-XSim 62] 'compile' step failed with error(s" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_WARNING_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, Toggle Line Comments" value="2" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 263, 23" value="2" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 263, 23, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 347, 64" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 347, 64, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 516, 63" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 555, 82" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 603, 32" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 603, 32, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 0, 164" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 100, 381" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 100, 434" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 100, 434, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 100, 449" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 1009, 357" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 101, 223" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 101, 350" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 102, 141" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 102, 286" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 102, 298" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 102, 298, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 103, 208" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 103, 208, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 103, 238" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 103, 343" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 103, 384" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 103, 525" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 104, 177" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 104, 313" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 104, 466" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 104, 466, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 104, 519" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 1043, 413" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 1045, 293" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 105, 247" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 106, 235" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 106, 235, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 106, 417" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 1069, 417" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 107, 210" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 107, 503" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 107, 503, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 1070, 428" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 110, 236" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 110, 236, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 111, 538" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 116, 418" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 118, 163" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 118, 163, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 12, 164, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 121, 272" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 122, 165" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 122, 441" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 124, 303" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 125, 268" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 126, 248" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 128, 176" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 128, 511" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 128, 525" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 130, 315" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 135, 272" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 136, 217" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 142, 186" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 142, 424" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 146, 500" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 155, 261" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 157, 517" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 157, 529" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 164, 532" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 165, 498" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 17, 164" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 175, 382" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 175, 470" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 178, 446, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 181, 261" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 186, 378" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 186, 94" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 186, 94, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 190, 70" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 195, 165" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 197, 299" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 200, 434" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 200, 94" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 200, 94, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 203, 276" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 205, 297" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 209, 333" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 210, 479" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 222, 506" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 222, 506, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 223, 322" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 229, 311" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 235, 103" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 239, 344" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 240, 190" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 249, 353" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 25, 147" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 251, 166" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 252, 224" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 253, 170" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 254, 281" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 255, 498" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 26, 133" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 261, 177" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 261, 177, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 28, 163" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 28, 184" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 28, 312" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 281, 460" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 29, 162" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 293, 425" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 3, 261" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 32, 165, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 341, 427" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 352, 486" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 4, 266" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 43, 225" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 433, 313" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 52, 312" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 53, 232" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 53, 251" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 53, 299" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 53, 302" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 537, 256" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 54, 265" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 54, 344" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 56, 284" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 56, 300" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 56, 321" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 56, 331" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 58, 366" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 62, 448" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 68, 148" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 69, 148" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 69, 179" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 69, 337" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 70, 210" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 71, 180" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 72, 241" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 72, 251" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 73, 259" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 73, 264" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 73, 264, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 77, 345" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 82, 97" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 82, 97, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 83, 264" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 83, 266" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 83, 266, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 83, 271" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 83, 271, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 84, 229" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 84, 229, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 84, 516" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 86, 312" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 86, 312, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 87, 301" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 87, 301, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 88, 178" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 88, 178, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 88, 199" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 88, 199, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 88, 522" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 89, 175" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 89, 215" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 89, 334" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 89, 334, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 90, 334" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 90, 334, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 90, 340" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 90, 340, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 91, 146" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 91, 146, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 91, 201" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 91, 201, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 91, 258" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 914, 266" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 92, 393" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 92, 393, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 94, 161" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 94, 208" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 94, 208, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 95, 387" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 95, 74" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 95, 74, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 96, 442" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 96, 522" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 96, 522, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 98, 115" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 98, 115, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 99, 180" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 99, 181" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 99, 212" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 99, 372" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 99, 372, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="binary_to_sg.vhd, 990, 468" value="1" type="GuiResourceData"/>
+<property name="convert_scancode.vhd, 127, 502" value="1" type="GuiResourceData"/>
+<property name="convert_scancode.vhd, 127, 502, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="convert_scancode.vhd, 163, 489" value="1" type="GuiResourceData"/>
+<property name="convert_scancode.vhd, 163, 489, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="convert_scancode.vhd, 57, 352" value="1" type="GuiResourceData"/>
+<property name="convert_to_binary.vhd, 1096, 314" value="1" type="GuiResourceData"/>
+<property name="convert_to_binary.vhd, 113, 285" value="1" type="GuiResourceData"/>
+<property name="convert_to_binary.vhd, 113, 285, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="convert_to_binary.vhd, 115, 294" value="1" type="GuiResourceData"/>
+<property name="convert_to_binary.vhd, 983, 297" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 100, 248" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 100, 248, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 100, 76" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 100, 76, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 101, 407" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 101, 407, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 1010, 345" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 147" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 147, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 249" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 466" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 466, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 502" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 80" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 102, 80, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 103, 249, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 104, 199" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 104, 366" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 104, 366, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 104, 386" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 104, 386, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 104, 464" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 105, 145" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 105, 348" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 105, 348, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 105, 97" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 105, 97, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 106, 371" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 106, 371, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 106, 468" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 106, 468, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 107, 300" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 107, 300, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 107, 365" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 107, 384" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 107, 384, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 108, 454" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 108, 454, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 110, 468" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 113, 353" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 114, 450" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 114, 450, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 114, 467" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 114, 507" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 116, 464" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 117, 134" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 117, 136, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 117, 431" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 117, 431, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 120, 350" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 120, 350, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 123, 124" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 123, 124, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 123, 94" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 123, 94, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 125, 474" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 126, 125" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 126, 125, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 129, 140" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 129, 425" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 133, 129" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 133, 129, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 133, 148" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 133, 148, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 133, 469" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 134, 461" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 135, 353" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 139, 125" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 139, 125, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 139, 410" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 139, 493" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 14, 154" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 142, 254" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 142, 254, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 142, 407" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 142, 521" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 145, 400" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 146, 367" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 146, 367, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 146, 482" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 146, 482, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 147, 356" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 147, 399" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 147, 399, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 147, 456" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 148, 470" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 151, 397" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 151, 493" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 152, 247" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 152, 247, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 162, 501" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 171, 129" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 171, 129, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 171, 497" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 172, 523" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 175, 129" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 175, 147" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 175, 147, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 175, 553" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 181, 385" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 181, 450" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 181, 451" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 182, 461" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 183, 130" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 183, 130, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 183, 488" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 184, 483" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 184, 493" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 185, 534" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 186, 216" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 187, 482" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 187, 534" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 189, 434" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 189, 434, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 190, 198" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 190, 198, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 191, 166" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 193, 476" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 193, 476, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 194, 146" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 194, 146, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 194, 470" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 194, 470, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 195, 149" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 195, 149, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 196, 458" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 196, 458, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 196, 468" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 196, 468, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 199, 468" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 199, 468, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 202, 416" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 203, 277" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 207, 190" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 210, 478" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 212, 497" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 215, 424" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 218, 468" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 220, 264" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 221, 295" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 229, 499" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 230, 451" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 232, 403" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 233, 146" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 233, 427" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 233, 486" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 238, 466" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 238, 506" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 244, 166" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 244, 463" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 245, 195" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 246, 198" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 254, 355" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 254, 355, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 256, 26" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 292, 491" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 30, 353" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 302, 435" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 303, 541" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 32, 377" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 328, 387" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 33, 430" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 374, 249" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 415, 135" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 54, 402" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 54, 487" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 54, 516" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 54, 527" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 57, 260" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 57, 501" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 57, 523" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 58, 417" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 62, 518" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 64, 421" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 64, 421, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 66, 381" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 66, 381, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 66, 488" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 67, 487" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 67, 487, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 69, 383" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 69, 383, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 69, 515" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 70, 484" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 75, 376" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 76, 509" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 76, 518" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 79, 141" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 79, 141, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 80, 516" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 80, 516, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 83, 266" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 83, 266, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 83, 45" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 83, 45, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 84, 159" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 84, 159, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 84, 369" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 84, 369, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 85, 451" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 86, 430" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 86, 430, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 87, 317" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 87, 317, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 87, 518" value="2" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 89, 131" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 89, 131, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 89, 538" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 90, 319" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 90, 319, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 91, 167" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 91, 363" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 91, 363, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 91, 396" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 91, 396, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 92, 377" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 93, 162" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 93, 481" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 94, 166" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 94, 533" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 952, 337" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 97, 89" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 97, 89, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_ctrl.vhd, 989, 243" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 100, 288" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 100, 288, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 101, 264" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 101, 264, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 141, 270" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 141, 270, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 150, 277" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 150, 277, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 152, 304" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 152, 304, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 158, 334" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 158, 334, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 160, 283" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 160, 283, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 165, 284" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 165, 284, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 198, 255" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 198, 255, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 201, 210" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 211, 257" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 211, 257, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 227, 489" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 227, 489, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 229, 265" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 229, 265, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 234, 266" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 234, 266, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 253, 264" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 253, 264, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 78, 280" value="1" type="GuiResourceData"/>
+<property name="keyboard_top.vhd, 78, 280, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="tb_keyboard.vhd, 982, 364" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="GuiMode" value="8" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="0" type="TclMode"/>
+<property name="TclMode" value="5" type="TclMode"/>
 </item>
 </section>
 </application>

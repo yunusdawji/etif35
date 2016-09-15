@@ -24,7 +24,7 @@
     <Option Name="IPUserFilesDir" Val="$PPRDIR/project_2.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/project_2.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="79"/>
+    <Option Name="WTXSimLaunchSim" Val="87"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -49,6 +49,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Lab2/keyboard_ctrl.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="//tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_ctrl.vhd"/>
+          <Attr Name="ImportTime" Val="1442325200"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Lab2/edge_detector.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="//tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/edge_detector.vhd"/>
@@ -60,14 +68,6 @@
       <File Path="$PSRCDIR/sources_1/imports/Lab2/convert_scancode.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="//tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/convert_scancode.vhd"/>
-          <Attr Name="ImportTime" Val="1442325200"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Lab2/keyboard_ctrl.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="//tiger.student.lth.se/yu5866da-s/Downloads/Lab2/Lab2/keyboard_ctrl.vhd"/>
           <Attr Name="ImportTime" Val="1442325200"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
